@@ -320,7 +320,7 @@ El asistente realiza la extracción de ficheros y la configuración de los servi
 
 ### Paso 8.9: Finalización del asistente
 Se confirma que la instalación ha concluido satisfactoriamente y se procede a cerrar el instalador.
-![Finalización Instalación](08-instalacion-hmailserver/10--finalizacion-instalacion.png)
+![Finalización Instalación](08-instalacion-hmailserver/10-finalizacion-instalacion.png)
 
 ### Paso 8.10: Conexión inicial
 Al finalizar, se abre la ventana de conexión para acceder a la instancia local de hMailServer e iniciar la configuración de dominios.
