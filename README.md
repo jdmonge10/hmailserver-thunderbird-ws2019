@@ -149,15 +149,15 @@ En esta fase se procede a modificar el nombre genérico asignado por Windows por
 
 ### Paso 4.1: Acceso a las propiedades del sistema
 Desde el panel de Servidor Local, se localiza la sección de Nombre de equipo para iniciar la modificación del identificador actual.
-![Acceso Propiedades](04-configuracion-nombre/01-configuracion-nombre-acceso-propiedades.png)
+![Acceso Propiedades](04-configuracion-nombre/01-configuracion-nombre-escribir-nuevo.png)
 
 ### Paso 4.2: Configuración del nuevo nombre
 Se abre la ventana de cambios de nombre de equipo para sustituir el nombre aleatorio de la instalación.
-![Configuración Nombre](04-configuracion-nombre/02-configuracion-nombre-cambio-nombre.png)
+![Configuración Nombre](04-configuracion-nombre/02-configuracion-nombre-propiedades.png)
 
 ### Paso 4.3: Asignación de Hostname
 Se introduce el nombre definitivo del servidor: **AntonioMora**.
-![Nombre AntonioMora](04-configuracion-nombre/03-configuracion-nombre-antoniomora.png)
+![Nombre AntonioMora](04-configuracion-nombre/03-configuracion-nombre-nuevo-escrito.png)
 
 ### Paso 4.4: Notificación de reinicio necesario
 El sistema confirma el cambio y advierte que los cambios solo surtirán efecto tras reiniciar el equipo.
@@ -165,6 +165,6 @@ El sistema confirma el cambio y advierte que los cambios solo surtirán efecto t
 
 ### Paso 4.5: Ejecución del reinicio
 Se procede a reiniciar el servidor para consolidar la nueva identidad del host en la red.
-![Reinicio Final](04-configuracion-nombre/05-configuracion-nombre-reinicio-final.png)
+![Reinicio Final](04-configuracion-nombre/05-configuracion-nombre-finalizado.png)
 
 ---
