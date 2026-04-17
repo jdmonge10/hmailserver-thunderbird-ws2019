@@ -417,29 +417,68 @@ Se completa la instalación correctamente. Se selecciona la opción de ejecutar 
 
 ## 📂 Fase 11: Configuración de cuentas en Thunderbird
 
-En esta fase vinculamos las identidades creadas en **hMailServer** con nuestro cliente de correo para poder gestionar los mensajes de forma visual.
+En esta fase realizamos la vinculación técnica entre el servidor hMailServer y el cliente Thunderbird para ambos usuarios.
 
-### 11.1. Configuración de la cuenta principal (Profesor)
-Iniciamos Thunderbird e introducimos el nombre del docente y su dirección completa: `Profesor@AntonioMora.edu`. Al ser un entorno local, la detección automática no encontrará el servidor externo.
+### 11.1. Bienvenida al asistente
+Al iniciar Thunderbird, se nos presenta la pantalla de bienvenida para configurar nuestra primera cuenta.
+![Bienvenida](11-configuracion-cuentas-thunderbird/01-configuracion-cuentas-thunderbird-bienvenida.png)
 
+### 11.2. Datos de la cuenta del Profesor
+Introducimos el nombre, la dirección `Profesor@AntonioMora.edu` y la contraseña.
 ![Datos Profesor](11-configuracion-cuentas-thunderbird/02-configuracion-cuentas-thunderbird-datos-profesor.png)
 
-### 11.2. Ajuste manual de protocolos y puertos
-Configuramos manualmente los servidores entrante y saliente apuntando a `localhost`. Establecemos el puerto **143** para IMAP y el puerto **25** para SMTP, seleccionando **Ninguna** seguridad y **Contraseña normal** para permitir la comunicación local.
+### 11.3. Acceso a configuración manual
+Tras el fallo de detección automática, accedemos al panel manual para especificar los servidores.
+![Ajustes Manuales](11-configuracion-cuentas-thunderbird/03-configuracion-cuentas-thunderbird-ajustes-manuales.png)
 
+### 11.4. Parámetros Localhost (IMAP/SMTP)
+Configuramos ambos servidores apuntando a la IP local (`localhost`) con sus puertos estándar (143 y 25).
 ![Parámetros Localhost](11-configuracion-cuentas-thunderbird/04-configuracion-cuentas-thunderbird-parametros-localhost.png)
 
-### 11.3. Alta de la cuenta de alumno (Antonio1)
-Para probar el flujo de correos, añadimos una segunda cuenta desde el menú de ajustes. Repetimos el proceso de configuración manual para `Antonio1@AntonioMora.edu`.
+### 11.5. Aceptación de advertencia de seguridad
+Confirmamos que entendemos los riesgos de usar una conexión sin cifrado SSL/TLS en nuestro entorno de pruebas.
+![Advertencia Seguridad](11-configuracion-cuentas-thunderbird/05-configuracion-cuentas-thunderbird-advertencia-seguridad.png)
 
+### 11.6. Cuenta de Profesor finalizada
+El asistente confirma que la primera cuenta se ha configurado con éxito.
+![Cuenta Finalizada](11-configuracion-cuentas-thunderbird/06-configuracion-cuentas-thunderbird-cuenta-finalizada.png)
+
+### 11.7. Añadir nueva cuenta de alumno
+Desde el menú principal, seleccionamos la opción de añadir una cuenta de correo adicional.
+![Menú Nueva Cuenta](11-configuracion-cuentas-thunderbird/07-configuracion-cuentas-thunderbird-menu-nueva-cuenta.png)
+
+### 11.8. Selección del tipo de cuenta
+Elegimos la opción de "Correo electrónico" para iniciar el segundo asistente.
+![Selección Correo](11-configuracion-cuentas-thunderbird/08-configuracion-cuentas-thunderbird-seleccion-correo.png)
+
+### 11.9. Datos de la cuenta de Alumno (Antonio1)
+Introducimos las credenciales correspondientes al buzón `Antonio1@AntonioMora.edu`.
 ![Datos Alumno](11-configuracion-cuentas-thunderbird/09-configuracion-cuentas-thunderbird-datos-alumno.png)
 
-### 11.4. Validación y test de conectividad
-Pulsamos en **Probar** para que Thunderbird sondee el servidor hMailServer. Una vez recibida la confirmación en verde de que se han encontrado las configuraciones, aceptamos la advertencia de seguridad por falta de cifrado.
+### 11.10. Error de detección en segunda cuenta
+Documentamos el error esperado al intentar localizar el dominio de forma automática en internet.
+![Error Detección Alumno](11-configuracion-cuentas-thunderbird/10-configuracion-cuentas-thunderbird-error-deteccion-alumno.png)
 
+### 11.11. Configuración de servidor entrante (Alumno)
+Establecemos manualmente el protocolo IMAP y el host local para la recepción de correos del alumno.
+![Servidor Entrada Alumno](11-configuracion-cuentas-thunderbird/11-configuracion-cuentas-thunderbird-servidor-entrada-alumno.png)
+
+### 11.12. Validación mediante botón "Probar"
+Ejecutamos el test de conectividad para asegurar que el cliente llega al servidor hMailServer.
+![Botón Probar](11-configuracion-cuentas-thunderbird/14-configuracion-cuentas-thunderbird-boton-probar.png)
+
+### 11.13. Éxito en la localización de configuraciones
+Thunderbird confirma en verde que los parámetros locales de Antonio1 son correctos.
 ![Configuración Encontrada](11-configuracion-cuentas-thunderbird/15-configuracion-cuentas-thunderbird-configuracion-encontrada.png)
 
-### 11.5. Panel de gestión finalizado
-Tras completar el asistente, el panel lateral muestra ambas cuentas operativas. Ya tenemos el escenario listo para realizar la prueba de envío entre usuarios del mismo dominio.
+### 11.14. Introducción de password del alumno
+Guardamos la contraseña de Antonio1 en el gestor de Thunderbird.
+![Password Alumno](11-configuracion-cuentas-thunderbird/16-configuracion-cuentas-thunderbird-introduccion-password-alumno.png)
 
+### 11.15. Finalización del alta de Antonio1
+Confirmamos el cierre del asistente para la segunda cuenta.
+![Finalización Alumno](11-configuracion-cuentas-thunderbird/17-configuracion-cuentas-thunderbird-finalizacion-alumno.png)
+
+### 11.16. Panel principal con ambas cuentas
+Vista final de la interfaz donde se comprueba que ambos buzones están listos para el envío y recepción.
 ![Panel Final](11-configuracion-cuentas-thunderbird/18-configuracion-cuentas-thunderbird-panel-final.png)
