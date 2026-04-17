@@ -93,8 +93,6 @@ Primer inicio de sesión exitoso en el entorno gráfico de Windows Server 2019.
 
 ---
 
----
-
 ## 📂 Fase 03: Instalación de Guest Additions
 Instalación de las herramientas de invitado para optimizar el rendimiento gráfico, habilitar el portapapeles compartido y mejorar la integración del ratón.
 
@@ -166,5 +164,42 @@ El sistema confirma el cambio y advierte que los cambios solo surtirán efecto t
 ### Paso 4.5: Ejecución del reinicio
 Se procede a reiniciar el servidor para consolidar la nueva identidad del host en la red.
 ![Reinicio Final](04-configuracion-nombre/05-configuracion-nombre-finalizado.png)
+
+---
+
+## 📂 Fase 05: Configuración de Red (IP Estática)
+Para asegurar que el servidor de correo sea siempre localizable por los clientes y no dependa de asignaciones dinámicas, se establece una configuración de red fija.
+
+### Paso 5.1: Acceso a la configuración de red
+Se inicia el proceso accediendo al centro de redes para gestionar las conexiones disponibles del sistema.
+![Abrir Ajustes](05-configuracion-red/01-configuracion-red-abrir-ajustes.png)
+
+### Paso 5.2: Estado de la conexión Ethernet
+Selección del adaptador de red principal para visualizar su estado actual y editar sus parámetros.
+![Menú Ethernet](05-configuracion-red/02-configuracion-red-menu-ethernet.png)
+
+### Paso 5.3: Gestión de adaptadores
+Acceso a la configuración detallada de los adaptadores de red instalados en el servidor.
+![Opciones Adaptador](05-configuracion-red/03-configuracion-red-opciones-adaptador.png)
+
+### Paso 5.4: Propiedades de la interfaz
+Entrada a la configuración técnica de la tarjeta de red virtual para modificar los protocolos.
+![Propiedades Adaptador](05-configuracion-red/04-configuracion-red-propiedades-adaptador.png)
+
+### Paso 5.5: Protocolo de Internet versión 4
+Selección del protocolo TCP/IPv4, elemento clave para la asignación de la dirección IP fija.
+![Selección IPv4](05-configuracion-red/05-configuracion-red-seleccion-ipv4.png)
+
+### Paso 5.6: Asignación de parámetros estáticos
+Configuración manual de la dirección IP (`192.168.1.3`), máscara de subred, puerta de enlace y servidores DNS.
+![Parámetros Estáticos](05-configuracion-red/06-configuracion-red-parametros-estaticos.png)
+
+### Paso 5.7: Validación de la configuración
+Confirmación de que los parámetros han sido aplicados correctamente en la interfaz de red del servidor.
+![Verificación Final](05-configuracion-red/07-configuracion-red-verificacion-final.png)
+
+### Paso 5.8: Test de conectividad
+Prueba técnica para asegurar que el servidor mantiene comunicación con el exterior tras el cambio a IP fija.
+![Prueba Conectividad](05-configuracion-red/08-configuracion-red-prueba-conectividad.png)
 
 ---
