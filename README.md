@@ -4,18 +4,19 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 
 ---
 
-## 📑 Índice de Contenidos
-* [🛠️ Especificaciones Técnicas](#️-especificaciones-técnicas)
-* [📂 Fase 01: Configuración de la Máquina Virtual (VirtualBox)](#-fase-01-configuración-de-la-máquina-virtual-virtualbox)
-* [📂 Fase 02: Instalación del Sistema Operativo](#-fase-02-instalación-del-sistema-operativo)
-* [📂 Fase 03: Optimización del Entorno (Guest Additions)](#-fase-03-optimización-del-entorno-guest-additions)
-* [📂 Fase 04: Identidad del Servidor (Hostname)](#-fase-04-identidad-del-servidor-hostname)
-* [📂 Fase 05: Configuración de Red (IP Estática)](#-fase-05-configuración-de-red-ip-estática)
-* [📂 Fase 06: Preparación y Descarga de Herramientas](#-fase-06-preparación-y-descarga-de-herramientas)
-* [📂 Fase 07: Instalación de hMailServer](#-fase-07-instalación-de-hmailserver)
-* [📂 Fase 08: Configuración del Cliente Thunderbird](#-fase-08-configuración-del-cliente-thunderbird)
-* [🏆 Conclusión](#-conclusión)
-* [🧠 Lecciones Aprendidas (Troubleshooting)](#-lecciones-aprendidas-troubleshooting)
+# 📑 Índice de Contenidos
+
+1. [📂 Fase 01: Creación de la Máquina Virtual](#-fase-01-creación-de-la-máquina-virtual)
+2. [📂 Fase 02: Instalación de Windows Server 2019](#-fase-02-instalación-de-windows-server-2019)
+3. [📂 Fase 03: Configuración Básica Post-Instalación](#-fase-03-configuración-básica-post-instalación)
+4. [📂 Fase 04: Configuración del Nombre del Servidor](#-fase-04-configuración-del-nombre-del-servidor)
+5. [📂 Fase 05: Configuración de Red Estática](#-fase-05-configuración-de-red-estática)
+6. [📂 Fase 06: Preparación del Entorno (.NET Framework)](#-fase-06-preparación-del-entorno-net-framework)
+7. [📂 Fase 07: Descarga de hMailServer](#-fase-07-descarga-de-hmailserver)
+8. [📂 Fase 08: Instalación de hMailServer](#-fase-08-instalación-de-hmailserver)
+9. [📂 Fase 09: Configuración Inicial del Servidor de Correo](#-fase-09-configuración-inicial-del-servidor-de-correo)
+10. [🏆 Conclusión](#-conclusión)
+11. [🧠 Lecciones Aprendidas (Troubleshooting)](#-lecciones-aprendidas-troubleshooting)
 
 ---
 
