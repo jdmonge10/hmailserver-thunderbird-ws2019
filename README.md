@@ -3,13 +3,15 @@
 Este manual documenta el proceso técnico integral para crear un entorno de servidor de correo profesional, desde la virtualización en VirtualBox hasta la validación del flujo de mensajería con clientes externos.
 
 ---
+
 # 📑 Índice de Contenidos
 
-1. [📂 Fase 01: Configuración de la Máquina Virtual (VirtualBox)](#fase-01-configuración-de-la-máquina-virtual-virtualbox)
-2. [📂 Fase 02: Instalación del Sistema Operativo](#fase-02-instalación-del-sistema-operativo)
-3. [📂 Fase 03: Instalación de Guest Additions](#fase-03-instalación-de-guest-additions)
-4. [📂 Fase 04: Identidad del Servidor (Hostname)](#fase-04-identidad-del-servidor-hostname)
-5. [📂 Fase 05: Configuración de Red (IP Estática)](#fase-05-configuración-de-red-ip-estática)
+* [🛠️ Especificaciones Técnicas](#️-especificaciones-técnicas)
+* [📂 Fase 01: Configuración de la Máquina Virtual (VirtualBox)](#-fase-01-configuración-de-la-máquina-virtual-virtualbox)
+* [📂 Fase 02: Instalación del Sistema Operativo](#-fase-02-instalación-del-sistema-operativo)
+* [📂 Fase 03: Instalación de Guest Additions](#-fase-03-instalación-de-guest-additions)
+* [📂 Fase 04: Identidad del Servidor (Hostname)](#-fase-04-identidad-del-servidor-hostname)
+* [📂 Fase 05: Configuración de Red (IP Estática)](#-fase-05-configuración-de-red-ip-estática)
 
 ---
 
