@@ -19,6 +19,9 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 10: Descarga e instalación de Thunderbird](#-fase-10-descarga-e-instalación-de-thunderbird)
 * [📂 Fase 11: Configuración de cuentas en Thunderbird](#-fase-11-configuración-de-cuentas-en-thunderbird)
 * [📂 Fase 12: Comprobación del funcionamiento](#-fase-12-comprobación-del-funcionamiento)
+* [🏆 Conclusión Final](#-conclusión-final)
+* [🧠 Lecciones Aprendidas (Troubleshooting)](#-lecciones-aprendidas-troubleshooting)
+* [🚀 Hoja de Ruta (Próximos Pasos)](#-hoja-de-ruta-próximos-pasos)
 
 ---
 
@@ -519,3 +522,19 @@ El alumno responde al profesor confirmando la recepción y aclarando que se ha t
 ### 12.8. Recepción de la respuesta por el Profesor
 El ciclo de comunicación se cierra cuando el Profesor recibe el correo de respuesta, confirmando que el servidor es 100% bidireccional.
 ![Recepción Final](12-comprobacion-funcionamiento/08-comprobacion-recepcion-respuesta-profesor.png)
+
+
+---
+
+## 🏆 Conclusión Final
+El proyecto ha demostrado la viabilidad de implementar un servidor de correo completo (**hMailServer**) en un entorno corporativo Windows Server 2019. Se ha logrado integrar con éxito el envío (SMTP), la recepción (IMAP) y el uso de clientes de escritorio (Thunderbird), cumpliendo con los estándares de comunicación actuales.
+
+## 🧠 Lecciones Aprendidas (Troubleshooting)
+* **Validación de cuentas:** El servidor no permite el envío si uno de los destinatarios (Cc/Cco) está inactivo, lo que garantiza la integridad de la cola de correo.
+* **Firewall:** Es crítico abrir los puertos 25 y 143 para permitir el tráfico local entre la máquina virtual y el cliente.
+* **Seguridad:** En entornos de prueba sin SSL, es necesario aceptar manualmente las excepciones de seguridad en el cliente de correo.
+
+## 🚀 Hoja de Ruta (Próximos Pasos)
+1. **Cifrado SSL/TLS:** Implementar certificados para asegurar las conexiones en los puertos 465 y 993.
+2. **Webmail:** Instalar Roundcube o SquirrelMail para acceso vía navegador.
+3. **Antispam/Antivirus:** Configurar filtros de seguridad adicionales integrados con hMailServer.
