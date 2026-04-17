@@ -16,6 +16,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 07: Descarga de hMailServer](#-fase-07-descarga-de-hmailserver)
 * [📂 Fase 08: Instalación de hMailServer](#-fase-08-instalación-de-hmailserver)
 * [📂 Fase 09: Configuración de dominio y cuentas](#-fase-09-configuración-de-dominio-y-cuentas)
+* [📂 Fase 10: Descarga e instalación de Thunderbird](#-fase-10-descarga-e-instalación-de-thunderbird)
 
 ---
 
@@ -376,3 +377,37 @@ Vista general de las cuatro cuentas creadas, donde se verifica el estado de cada
 ### Paso 9.11: Lista de Aliases configurados
 Resumen final de los aliases creados (Antonio, Lopez, Mora y Profesor), todos apuntando correctamente a sus cuentas de destino.
 ![Lista Aliases](09-configuracion-dominio-cuentas/11-configuracion-dominio-cuentas-lista-aliases.png)
+
+---
+
+## 📂 Fase 10: Descarga e instalación de Thunderbird
+
+En esta fase se realiza la obtención del cliente de correo y su despliegue en el servidor para permitir la gestión de las cuentas creadas previamente en hMailServer.
+
+### Paso 10.1: Acceso a la web oficial
+Se accede al sitio web de Thunderbird mediante el navegador para descargar el instalador oficial del cliente de correo.
+![Web Thunderbird](10-descarga-instalacion-thunderbird/01-descarga-instalacion-thunderbird-web.png)
+
+### Paso 10.2: Ejecución del instalador y extracción
+Una vez descargado, se ejecuta el archivo para iniciar la extracción de los componentes temporales necesarios para la instalación.
+![Extracción](10-descarga-instalacion-thunderbird/02-descarga-instalacion-thunderbird-ejecucion-extracción.png)
+
+### Paso 10.3: Bienvenida al asistente
+Se inicia el asistente de instalación de Mozilla Thunderbird. Se pulsa "Siguiente" para continuar.
+![Asistente Bienvenida](10-descarga-instalacion-thunderbird/03-descarga-instalacion-thunderbird-asistente-bienvenida.png)
+
+### Paso 10.4: Selección del tipo de instalación
+Se selecciona la configuración **Estándar** para realizar una instalación con las opciones recomendadas por defecto.
+![Tipo Instalación](10-descarga-instalacion-thunderbird/04-descarga-instalacion-thunderbird-tipo-instalacion.png)
+
+### Paso 10.5: Confirmación de ruta de destino
+Se verifica la ruta de instalación en los archivos de programa y se procede a confirmar el inicio del proceso.
+![Resumen Instalación](10-descarga-instalacion-thunderbird/05-descarga-instalacion-thunderbird-resumen-instalacion.png)
+
+### Paso 10.6: Progreso de la instalación
+El sistema realiza la copia de los archivos binarios y la configuración de los accesos directos del cliente de correo.
+![Progreso Instalación](10-descarga-instalacion-thunderbird/06-descarga-instalacion-thunderbird-progreso-instalacion.png)
+
+### Paso 10.7: Finalización del proceso
+Se completa la instalación correctamente. Se selecciona la opción de ejecutar el programa inmediatamente para proceder con la configuración de las cuentas.
+![Finalización Instalación](10-descarga-instalacion-thunderbird/07-descarga-instalacion-thunderbird-finalizacion-instalacion.png)
