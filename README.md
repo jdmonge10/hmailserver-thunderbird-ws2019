@@ -14,6 +14,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 05: Configuración de Red (IP Estática)](#-fase-05-configuración-de-red-ip-estática)
 * [📂 Fase 06: Preparación del Entorno (.NET Framework)](#-fase-06-preparación-del-entorno-net-framework)
 * [📂 Fase 07: Descarga de hMailServer](#-fase-07-descarga-de-hmailserver)
+* [📂 Fase 08: Instalación de hMailServer](#-fase-08-instalación-de-hmailserver)
 
 ---
 
@@ -280,3 +281,47 @@ Una vez completada la descarga, se verifica la presencia del instalador en el hi
 ![Finalización y Ejecución](07-descarga-hmailserver/04-descarga-hmailserver-finalizada-ejecucion.png)
 
 ---
+
+## 📂 Fase 08: Instalación de hMailServer
+
+En esta fase se ejecuta el asistente de instalación para desplegar los binarios del servidor de correo y configurar los parámetros iniciales de seguridad.
+
+### Paso 8.1: Aceptación de la licencia
+Se revisan y aceptan los términos del acuerdo de licencia (License Agreement) para proceder con la instalación del software.
+![Aceptación Licencia](08-instalacion-hmailserver/01-instalacion-hmailserver-licencia.png)
+
+### Paso 8.2: Ruta de instalación
+Se define el directorio de destino en el servidor. Se mantiene la ruta por defecto en `C:\Program Files (x86)\hMailServer`.
+![Ruta Instalación](08-instalacion-hmailserver/02-instalacion-hmailserver-ruta.png)
+
+### Paso 8.3: Selección de componentes
+Se selecciona el tipo de instalación "Full installation", asegurando que tanto el servidor como las herramientas de administración se instalen en el equipo.
+![Componentes](08-instalacion-hmailserver/03-instalacion-hmailserver-componentes.png)
+
+### Paso 8.4: Selección de base de datos
+Se elige la opción "Use built-in database engine" para utilizar la base de datos Microsoft SQL Compact integrada, simplificando la configuración inicial.
+![Base de Datos](08-instalacion-hmailserver/04-instalacion-hmailserver-database.png)
+
+### Paso 8.5: Carpeta del menú inicio
+Se confirma el nombre de la carpeta que se creará en el menú de inicio para los accesos directos del programa.
+![Menú Inicio](08-instalacion-hmailserver/05-instalacion-hmailserver-menu-inicio.png)
+
+### Paso 8.6: Contraseña de administración
+Se establece la contraseña maestra necesaria para gestionar el servidor de correo a través de la herramienta de administración.
+![Contraseña Maestra](08-instalacion-hmailserver/06-instalacion-hmailserver-password.png)
+
+### Paso 8.7: Preparado para instalar
+Se muestra un resumen de las opciones seleccionadas antes de comenzar la copia de archivos al sistema.
+![Listo para instalar](08-instalacion-hmailserver/07-instalacion-hmailserver-preparado.png)
+
+### Paso 8.8: Progreso de instalación
+El asistente realiza la extracción de ficheros y la configuración de los servicios de hMailServer en el sistema operativo.
+![Progreso Instalación](08-instalacion-hmailserver/08-instalacion-hmailserver-progreso.png)
+
+### Paso 8.9: Finalización del asistente
+Se confirma que la instalación ha concluido satisfactoriamente y se procede a cerrar el instalador.
+![Finalización Instalación](08-instalacion-hmailserver/09-instalacion-hmailserver-finalizacion.png)
+
+### Paso 8.10: Conexión inicial
+Al finalizar, se abre la ventana de conexión para acceder a la instancia local de hMailServer e iniciar la configuración de dominios.
+![Conexión Inicial](08-instalacion-hmailserver/10-instalacion-hmailserver-conexion.png)
