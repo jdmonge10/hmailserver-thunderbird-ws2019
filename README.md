@@ -15,6 +15,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 06: Preparación del Entorno (.NET Framework)](#-fase-06-preparación-del-entorno-net-framework)
 * [📂 Fase 07: Descarga de hMailServer](#-fase-07-descarga-de-hmailserver)
 * [📂 Fase 08: Instalación de hMailServer](#-fase-08-instalación-de-hmailserver)
+* [📂 Fase 09: Configuración de dominio y cuentas](#-fase-09-configuración-de-dominio-y-cuentas)
 
 ---
 
@@ -325,3 +326,53 @@ Se confirma que la instalación ha concluido satisfactoriamente y se procede a c
 ### Paso 8.10: Conexión inicial
 Al finalizar, se abre la ventana de conexión para acceder a la instancia local de hMailServer e iniciar la configuración de dominios.
 ![Conexión Inicial](08-instalacion-hmailserver/11-conexion-inicial.png)
+
+---
+
+## 📂 Fase 09: Configuración de dominio y cuentas
+
+En esta fase se realiza la configuración lógica del servidor de correo, definiendo el dominio principal y gestionando las cuentas de usuario y aliases según los requisitos del ejercicio.
+
+### Paso 9.1: Conexión al administrador
+Se abre la herramienta hMailServer Administrator. En la ventana de conexión, se selecciona el host local (**localhost**) y se pulsa en **Connect**.
+![Conexión Administrador](09-configuracion-dominio-cuentas/01-configuracion-dominio-cuentas-conexion-administrador.png)
+
+### Paso 9.2: Autenticación de seguridad
+Se introduce la contraseña administrativa configurada durante la instalación para acceder al panel de gestión.
+![Autenticación Password](09-configuracion-dominio-cuentas/02-configuracion-dominio-cuentas-autenticacion-password.png)
+
+### Paso 9.3: Inicio de configuración de dominio
+En la pantalla de bienvenida, se selecciona el botón **Add domain...** para iniciar el registro del nuevo dominio de correo.
+![Bienvenida Add Domain](09-configuracion-dominio-cuentas/03-configuracion-dominio-cuentas-bienvenida-add-domain.png)
+
+### Paso 9.4: Registro del dominio
+Se introduce el nombre del dominio solicitado: **AntonioMora.edu**. Se verifica que esté habilitado y se pulsa el botón **Save**.
+![Nombre Dominio](09-configuracion-dominio-cuentas/04-configuracion-dominio-cuentas-nombre-dominio.png)
+
+### Paso 9.5: Acceso a la gestión de cuentas
+Dentro del árbol del dominio, se selecciona la carpeta **Accounts** y se pulsa el botón **Add...** para crear los usuarios.
+![Sección Accounts](09-configuracion-dominio-cuentas/05-configuracion-dominio-cuentas-seccion-accounts.png)
+
+### Paso 9.6: Configuración de la cuenta "Profesor"
+Se crea la cuenta del primer usuario asignando una cuota de almacenamiento de **10 MB** en el campo "Maximum size (MB)".
+![Cuenta Profesor](09-configuracion-dominio-cuentas/06-configuracion-dominio-cuentas-creacion-cuenta-profesor.png)
+
+### Paso 9.7: Gestión de Aliases
+Se accede a la carpeta **Aliases** del dominio para configurar los nombres descriptivos adicionales requeridos.
+![Sección Aliases](09-configuracion-dominio-cuentas/07-configuracion-dominio-cuentas-seccion-aliases.png)
+
+### Paso 9.8: Creación del alias para "Profesor"
+Se configura el alias **Profesor SMIX-M07** redirigiéndolo a la cuenta principal del profesor.
+![Alias Profesor](09-configuracion-dominio-cuentas/08-configuracion-dominio-cuentas-creacion-alias-profesor.png)
+
+### Paso 9.9: Configuración de cuenta deshabilitada
+Se crea la cuenta **Mora2** (5 MB) y, para cumplir con el requisito de cuenta deshabilitada, se desmarca la casilla **Enabled**.
+![Cuenta Deshabilitada](09-configuracion-dominio-cuentas/09-configuracion-dominio-cuentas-cuenta-deshabilitada.png)
+
+### Paso 9.10: Resumen final de cuentas
+Vista general de las cuatro cuentas creadas, donde se verifica el estado de cada una y su pertenencia al dominio.
+![Resumen Final](09-configuracion-dominio-cuentas/10-configuracion-dominio-cuentas-resumen-final.png)
+
+### Paso 9.11: Lista de Aliases configurados
+Resumen final de los aliases creados (Antonio, Lopez, Mora y Profesor), todos apuntando correctamente a sus cuentas de destino.
+![Lista Aliases](09-configuracion-dominio-cuentas/11-configuracion-dominio-cuentas-lista-aliases.png)
