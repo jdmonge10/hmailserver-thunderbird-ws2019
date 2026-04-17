@@ -40,6 +40,6 @@ Se configura una máquina virtual con los parámetros necesarios para soportar e
 * **Procesador:** 2 núcleos de CPU.
 * **Disco Duro:** 50 GB (Reserva dinámica).
 
-![Configuración de hardware virtual](01-configuracion-virtualbox/01-ajustes-hardware-virtual.png)
+![Configuración de hardware virtual](01-requisitos-tecnicos/01-requisitos-tecnicos-configuracion-vm.png)
 
 ---
