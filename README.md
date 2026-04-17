@@ -44,29 +44,51 @@ Se configura una máquina virtual con los parámetros necesarios para soportar e
 
 ---
 
----
-
 ## 📂 Fase 02: Instalación del Sistema Operativo
-En esta etapa se realiza la instalación limpia de Windows Server 2019, definiendo la edición del servidor y preparando el almacenamiento para el motor de correo.
+En esta etapa se realiza la instalación limpia de Windows Server 2019, definiendo la edición del servidor y preparando el almacenamiento.
 
-### Paso 2.1: Comienzo de la instalación
-Se inicia el asistente desde la imagen ISO, configurando el idioma, el formato de hora y el método de entrada del teclado.
-![Inicio Instalación](02-instalacion-sistema-operativo/01-idioma-teclado.png)
+### Paso 2.1: Inicio del asistente
+Se arranca la máquina virtual desde la ISO y se configuran las preferencias de idioma y teclado.
+![Inicio Instalación](02-instalacion-os/01-instalacion-os-inicio.png)
 
-### Paso 2.2: Selección de Edición
-Se selecciona la versión **Windows Server 2019 Standard Evaluation (Experiencia de escritorio)**. Es imperativo elegir la opción con GUI para la administración visual de hMailServer.
-![Selección de Edición](02-instalacion-sistema-operativo/03-seleccion-sistema-operativo.png)
+### Paso 2.2: Selección de la versión
+Se elige la versión **Standard con Experiencia de escritorio** para disponer de la interfaz gráfica (GUI).
+![Selección Versión](02-instalacion-os/02-instalacion-os-seleccion-version.png)
 
-### Paso 2.3: Configuración de Almacenamiento
-Se realiza una instalación de tipo "Personalizada" para gestionar las particiones, asignando la totalidad del espacio del disco virtual (50 GB).
-![Particionado de Disco](02-instalacion-sistema-operativo/04-particion-disco-duro.png)
+### Paso 2.3: Tipo de instalación
+Se selecciona la opción **Personalizada** para realizar una instalación desde cero en el disco duro virtual.
+![Tipo Personalizada](02-instalacion-os/03-instalacion-os-tipo-personalizada.png)
 
-### Paso 2.4: Configuración de Seguridad Inicial
-Tras la copia de archivos y el primer arranque, se establece la contraseña de la cuenta de **Administrador**, clave para la gestión posterior del servidor de correo.
-![Password Administrador](02-instalacion-sistema-operativo/05-password-administrador.png)
+### Paso 2.4: Aceptación de términos
+Confirmación de los términos de licencia de software de Microsoft.
+![Licencia](02-instalacion-os/04-instalacion-os-licencia.png)
 
-### Paso 2.5: Primer Inicio de Sesión
-Verificación del escritorio de Windows Server 2019 y acceso al Administrador del Servidor para comenzar las tareas de configuración de red.
-![Primer Inicio](02-instalacion-sistema-operativo/06-primer-inicio-sesion.png)
+### Paso 2.5: Destino de la instalación
+Se verifica que el sistema se instalará en la unidad de disco de 50 GB creada previamente.
+![Tipo Instalación](02-instalacion-os/05-tipo-de-instalacion.png)
+
+### Paso 2.6: Particionado del disco
+Se aplica el formato al espacio sin asignar para preparar la partición principal del sistema.
+![Partición Disco](02-instalacion-os/06-instalacion-os-particion-disco.png)
+
+### Paso 2.7: Progreso de instalación
+El sistema procede con la copia de archivos, preparación de archivos para instalación y características.
+![Progreso](02-instalacion-os/07-instalacion-os-progress.png)
+
+### Paso 2.8: Finalización de la fase inicial
+El servidor completa las tareas de instalación y se prepara para el primer reinicio.
+![Finalizada](02-instalacion-os/08-instalacion-os-finalizada.png)
+
+### Paso 2.9: Configuración de seguridad
+Se establece la contraseña para la cuenta raíz de **Administrador**.
+![Password](02-instalacion-os/09-instalacion-os-password.png)
+
+### Paso 2.10: Desbloqueo del sistema
+Uso de la combinación de teclas para acceder a la pantalla de inicio de sesión.
+![Truco Control Alt Supr](02-instalacion-os/10-instalacion-os-truco-ctrl-alt-supr.png)
+
+### Paso 2.11: Acceso al escritorio
+Primer inicio de sesión exitoso en el entorno gráfico de Windows Server 2019.
+![Acceso Final](02-instalacion-os/11-instalacion-os-acceso.png)
 
 ---
