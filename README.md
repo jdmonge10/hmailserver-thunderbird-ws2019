@@ -92,3 +92,52 @@ Primer inicio de sesión exitoso en el entorno gráfico de Windows Server 2019.
 ![Acceso Final](02-instalacion-os/11-instalacion-os-acceso.png)
 
 ---
+
+## 📂 Fase 03: Instalación de Guest Additions
+Una vez instalado el sistema operativo, es necesario instalar los controladores de invitado para mejorar la integración entre la máquina virtual y el anfitrión, habilitando el portapapeles compartido y la resolución de pantalla dinámica.
+
+### Paso 3.1: Montaje de la imagen de CD
+Se accede al menú de VirtualBox para insertar la imagen de CD de las Guest Additions en la unidad óptica virtual.
+![Montaje CD](03-instalacion-guest-additions/01-guest-additions-montaje-cd.png)
+
+### Paso 3.2: Acceso a la unidad de CD
+Se abre el explorador de archivos para localizar la unidad de CD donde se ha montado el software de VirtualBox.
+![Acceso Unidad](03-instalacion-guest-additions/02-guest-additions-acceso-unidad.png)
+
+### Paso 3.3: Ejecución del instalador
+Se selecciona y ejecuta el instalador correspondiente a la arquitectura del sistema operativo (64 bits).
+![Ejecución](03-instalacion-guest-additions/03-guest-additions-ejecucion.png)
+
+### Paso 3.4: Asistente de instalación
+Inicio del asistente de configuración (Setup Wizard) de Oracle VM VirtualBox Guest Additions.
+![Setup](03-instalacion-guest-additions/04-guest-additions-setup.png)
+
+### Paso 3.5: Ruta de instalación
+Se confirma el directorio de destino por defecto para los archivos del programa.
+![Ruta Instalación](03-instalacion-guest-additions/05-guest-additions-ruta-instalacion.png)
+
+### Paso 3.6: Selección de componentes
+Se verifican los componentes a instalar, incluyendo los controladores de pantalla y soporte de carpetas compartidas.
+![Componentes](03-instalacion-guest-additions/06-guest-additions-componentes.png)
+
+### Paso 3.7: Proceso de extracción
+Comienza la descompresión y copia de los archivos binarios necesarios al sistema.
+![Extracción](03-instalacion-guest-additions/07-guest-additions-extraccion.png)
+
+### Paso 3.8: Instalación de controladores
+El sistema solicita confirmación para instalar los controladores de dispositivo de Oracle Corporation.
+![Instalación](03-instalacion-guest-additions/08-guest-additions-instalacion.png)
+
+### Paso 3.9: Progreso de copia
+Finalización de la copia de archivos de controladores en el directorio del sistema.
+![Progreso](03-instalacion-guest-additions/09-guest-additions-progreso.png)
+
+### Paso 3.10: Instalación de servicios
+Se configuran y arrancan los servicios de sistema necesarios para el funcionamiento de las utilidades de invitado.
+![Servicios](03-instalacion-guest-additions/10-guest-additions-servicios.png)
+
+### Paso 3.11: Finalización y reinicio
+Se completa el asistente de instalación y se procede al reinicio obligatorio del servidor para aplicar los cambios.
+![Finalización](03-instalacion-guest-additions/11-guest-additions-finalizada.png)
+
+---
