@@ -12,6 +12,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 03: Instalación de Guest Additions](#-fase-03-instalación-de-guest-additions)
 * [📂 Fase 04: Identidad del Servidor (Hostname)](#-fase-04-identidad-del-servidor-hostname)
 * [📂 Fase 05: Configuración de Red (IP Estática)](#-fase-05-configuración-de-red-ip-estática)
+* [📂 Fase 06: Preparación del Entorno (.NET Framework)](#-fase-06-preparación-del-entorno-net-framework)
 
 ---
 
