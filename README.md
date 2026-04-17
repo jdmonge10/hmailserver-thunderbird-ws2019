@@ -43,3 +43,30 @@ Se configura una máquina virtual con los parámetros necesarios para soportar e
 ![Configuración de hardware virtual](01-requisitos-tecnicos/01-requisitos-tecnicos-configuracion-vm.png)
 
 ---
+
+---
+
+## 📂 Fase 02: Instalación del Sistema Operativo
+En esta etapa se realiza la instalación limpia de Windows Server 2019, definiendo la edición del servidor y preparando el almacenamiento para el motor de correo.
+
+### Paso 2.1: Comienzo de la instalación
+Se inicia el asistente desde la imagen ISO, configurando el idioma, el formato de hora y el método de entrada del teclado.
+![Inicio Instalación](02-instalacion-sistema-operativo/01-idioma-teclado.png)
+
+### Paso 2.2: Selección de Edición
+Se selecciona la versión **Windows Server 2019 Standard Evaluation (Experiencia de escritorio)**. Es imperativo elegir la opción con GUI para la administración visual de hMailServer.
+![Selección de Edición](02-instalacion-sistema-operativo/03-seleccion-sistema-operativo.png)
+
+### Paso 2.3: Configuración de Almacenamiento
+Se realiza una instalación de tipo "Personalizada" para gestionar las particiones, asignando la totalidad del espacio del disco virtual (50 GB).
+![Particionado de Disco](02-instalacion-sistema-operativo/04-particion-disco-duro.png)
+
+### Paso 2.4: Configuración de Seguridad Inicial
+Tras la copia de archivos y el primer arranque, se establece la contraseña de la cuenta de **Administrador**, clave para la gestión posterior del servidor de correo.
+![Password Administrador](02-instalacion-sistema-operativo/05-password-administrador.png)
+
+### Paso 2.5: Primer Inicio de Sesión
+Verificación del escritorio de Windows Server 2019 y acceso al Administrador del Servidor para comenzar las tareas de configuración de red.
+![Primer Inicio](02-instalacion-sistema-operativo/06-primer-inicio-sesion.png)
+
+---
