@@ -488,44 +488,34 @@ Vista final de la interfaz donde se comprueba que ambos buzones están listos pa
 
 ## 📂 Fase 12: Comprobación del funcionamiento
 
-En esta fase final, realizamos una prueba real de envío y recepción para validar la integridad del servidor y la gestión de errores en el flujo de mensajería.
+### 12.1. Redacción del mensaje de prueba
+Se redacta el correo desde la cuenta del Profesor incluyendo a varios alumnos en copia para verificar el comportamiento del servidor ante múltiples destinatarios.
+![Redacción](12-comprobacion-funcionamiento/01-comprobacion-redaccion-correo-prueba.png)
 
-### 12.1. Redacción del correo de prueba
-Se inicia una prueba de envío desde la cuenta de **Profesor** hacia el alumno **Antonio1**, incluyendo en copia (Cc y Cco) a otros usuarios del dominio para testear la capacidad multidevolución del protocolo SMTP.
+### 12.2. Intento de envío inicial
+Se pulsa el botón de enviar para que el cliente Thunderbird intente entregar el mensaje al servidor SMTP local.
+![Envío inicial](12-comprobacion-funcionamiento/02-comprobacion-envio-mensaje.png)
 
-![Redacción Correo Prueba](12-comprobacion-funcionamiento/01-comprobacion-redaccion-correo-prueba.png)
+### 12.3. Notificación de error del servidor
+El servidor hMailServer responde con un error de cuenta inactiva (Mora2), deteniendo el proceso de envío para proteger la integridad del flujo.
+![Error de cuenta](12-comprobacion-funcionamiento/03-comprobacion-error-cuenta-inactiva.png)
 
-### 12.2. Ejecución del envío
-Una vez revisado el contenido y los destinatarios, se procede a pulsar el botón **Enviar**. En este punto, el cliente establece comunicación con el servidor SMTP local para depositar el mensaje.
+### 12.4. Ajuste de la lista de correos
+Se elimina la cuenta que causa el conflicto (Mora2) de la lista de destinatarios para poder proceder con el resto de direcciones activas.
+![Corrección](12-comprobacion-funcionamiento/04-comprobacion-correccion-destinatarios.png)
 
-![Ejecución Envío](12-comprobacion-funcionamiento/02-comprobacion-envio-mensaje.png)
+### 12.5. Confirmación de salida satisfactoria
+Tras el ajuste, el servidor acepta el mensaje y Thunderbird muestra el progreso de envío completado sin errores.
+![Éxito de salida](12-comprobacion-funcionamiento/05-comprobacion-envio-exitoso.png)
 
-### 12.3. Gestión de errores: Cuenta no activa
-El servidor hMailServer bloquea el envío y devuelve un error: **"Account is not active"**. Esto se debe a que el destinatario `Mora2@AntonioMora.edu` está deshabilitado en el panel de control. El servidor demuestra así su capacidad de validación de reglas de negocio.
-
-![Error Cuenta Inactiva](12-comprobacion-funcionamiento/03-comprobacion-error-cuenta-inactiva.png)
-
-### 12.4. Corrección de la lista de destinatarios
-Se opta por eliminar la dirección conflictiva de la lista de envío para permitir que el flujo de correo continúe hacia las cuentas que sí están operativas.
-
-![Corrección Destinatarios](12-comprobacion-funcionamiento/04-comprobacion-correccion-destinatarios.png)
-
-### 12.5. Confirmación de salida exitosa
-Tras la corrección, Thunderbird confirma que el mensaje ha sido aceptado por el servidor SMTP y procesado correctamente hacia la cola de salida.
-
-![Envío Exitoso](12-comprobacion-funcionamiento/05-comprobacion-envio-exitoso.png)
-
-### 12.6. Recepción en el buzón del alumno
-Accedemos a la cuenta de **Antonio1** y verificamos que el correo ha llegado a su bandeja de entrada, validando el correcto funcionamiento del servicio de almacenamiento e IMAP.
-
+### 12.6. Verificación en la bandeja de entrada del alumno
+Se comprueba que el correo ha llegado correctamente a la cuenta de `Antonio1@AntonioMora.edu`, validando el servicio de recepción.
 ![Recepción Alumno](12-comprobacion-funcionamiento/06-comprobacion-recepcion-mensaje-alumno.png)
 
-### 12.7. Respuesta técnica del alumno
-El alumno responde al profesor confirmando la recepción y dejando constancia de la resolución del error previo con la cuenta inactiva.
+### 12.7. Redacción de respuesta explicativa
+El alumno responde al profesor confirmando la recepción y aclarando que se ha tenido que omitir la cuenta deshabilitada para lograr el envío.
+![Respuesta](12-comprobacion-funcionamiento/07-comprobacion-respuesta-explicativa.png)
 
-![Respuesta Explicativa Alumno](12-comprobacion-funcionamiento/07-comprobacion-respuesta-explicativa.png)
-
-### 12.8. Cierre del flujo de comunicación
-El **Profesor** recibe la respuesta de forma instantánea. Con este último paso, se certifica que la comunicación bidireccional en el dominio `AntonioMora.edu` es 100% funcional.
-
-![Recepción Final Profesor](12-comprobacion-funcionamiento/08-comprobacion-recepcion-respuesta-profesor.png)
+### 12.8. Recepción de la respuesta por el Profesor
+El ciclo de comunicación se cierra cuando el Profesor recibe el correo de respuesta, confirmando que el servidor es 100% bidireccional.
+![Recepción Final](12-comprobacion-funcionamiento/08-comprobacion-recepcion-respuesta-profesor.png)
