@@ -13,6 +13,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 04: Identidad del Servidor (Hostname)](#-fase-04-identidad-del-servidor-hostname)
 * [📂 Fase 05: Configuración de Red (IP Estática)](#-fase-05-configuración-de-red-ip-estática)
 * [📂 Fase 06: Preparación del Entorno (.NET Framework)](#-fase-06-preparación-del-entorno-net-framework)
+* [📂 Fase 07: Descarga de hMailServer](#-fase-07-descarga-de-hmailserver)
 
 ---
 
@@ -255,3 +256,27 @@ Confirmación de que la característica se ha habilitado correctamente en el ser
 ### Paso 6.13: Reinicio del servidor
 Se procede al reinicio del sistema para consolidar los cambios realizados en el entorno de .NET.
 ![Reinicio Servidor](06-preparacion-entorno/13-preparacion-entorno-reinicio-servidor.png)
+
+---
+
+## 📂 Fase 07: Descarga de hMailServer
+
+En esta etapa se detalla la obtención del instalador oficial desde el repositorio del desarrollador, asegurando la integridad del software y seleccionando la versión estable adecuada para el entorno.
+
+### Paso 7.1: Acceso a la web oficial
+Se accede al dominio oficial `hmailserver.com` mediante el navegador configurado en el servidor. Se verifica la autenticidad del sitio para proceder con la descarga segura del binario.
+![Web Oficial](07-descarga-hmailserver/01-descarga-hmailserver-web-oficial.png)
+
+### Paso 7.2: Selección de la versión estable
+Dentro de la sección "Download", se selecciona la versión **hMailServer 5.6.8 - Build 2574**. Se opta por esta versión debido a su estabilidad probada en entornos de producción sobre Windows Server.
+![Sección Download](07-descarga-hmailserver/02-descarga-hmailserver-seccion-download.png)
+
+### Paso 7.3: Gestión de la descarga
+Se inicia la transferencia del archivo ejecutable. Se monitoriza el progreso a través del gestor de descargas del navegador para asegurar que el paquete se reciba de forma completa y sin errores de red.
+![Inicio Descarga](07-descarga-hmailserver/03-descarga-hmailserver-inicio-descarga.png)
+
+### Paso 7.4: Finalización y ejecución
+Una vez completada la descarga, se verifica la presencia del instalador en el historial de archivos. Se procede a ejecutar el binario, lo cual activa el asistente de instalación (**Setup Wizard**) de hMailServer.
+![Finalización y Ejecución](07-descarga-hmailserver/04-descarga-hmailserver-finalizada-ejecucion.png)
+
+---
