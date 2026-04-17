@@ -20,7 +20,6 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 
 ---
 
-
 ## 🛠️ Especificaciones Técnicas
 Para asegurar la replicabilidad de este laboratorio de mensajería, se detallan los recursos utilizados:
 * **Hipervisor:** Oracle VirtualBox 7.x
