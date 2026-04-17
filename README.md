@@ -73,7 +73,7 @@ Se aplica el formato al espacio sin asignar para preparar la partición principa
 
 ### Paso 2.7: Progreso de instalación
 El sistema procede con la copia de archivos, preparación de archivos para instalación y características.
-![Progreso](02-instalacion-os/07-instalacion-os-progress.png)
+![Progreso](02-instalacion-os/07-instalacion-os-progreso.png)
 
 ### Paso 2.8: Finalización de la fase inicial
 El servidor completa las tareas de instalación y se prepara para el primer reinicio.
