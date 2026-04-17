@@ -288,7 +288,7 @@ En esta fase se ejecuta el asistente de instalación para desplegar los binarios
 
 ### Paso 8.1: Aceptación de la licencia
 Se revisan y aceptan los términos del acuerdo de licencia (License Agreement) para proceder con la instalación del software.
-![Aceptación Licencia](08-instalacion-hmailserver/01-instalacion-hmailserver-licencia.png)
+![Aceptación Licencia](08-instalacion-hmailserver/02-aceptacion-licencia.png)
 
 ### Paso 8.2: Ruta de instalación
 Se define el directorio de destino en el servidor. Se mantiene la ruta por defecto en `C:\Program Files (x86)\hMailServer`.
