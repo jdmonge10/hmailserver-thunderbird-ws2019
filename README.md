@@ -17,6 +17,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 08: Instalación de hMailServer](#-fase-08-instalación-de-hmailserver)
 * [📂 Fase 09: Configuración de dominio y cuentas](#-fase-09-configuración-de-dominio-y-cuentas)
 * [📂 Fase 10: Descarga e instalación de Thunderbird](#-fase-10-descarga-e-instalación-de-thunderbird)
+* [📂 Fase 11: Configuración de cuentas en Thunderbird](#-fase-11-configuración-de-cuentas-en-thunderbird)
 
 ---
 
@@ -410,4 +411,35 @@ El sistema realiza la copia de los archivos binarios y la configuración de los 
 
 ### Paso 10.7: Finalización del proceso
 Se completa la instalación correctamente. Se selecciona la opción de ejecutar el programa inmediatamente para proceder con la configuración de las cuentas.
-![Finalización Instalación](10-descarga-instalacion-thunderbird/07-descarga-instalacion-thunderbird-finalizacion-instalacion.png)
+![Finalización Instalación](10-descarga-instalacion-thunderbird/07-descarga-instalacion-thunderbird-finalizacion-instalacion.png
+
+---
+
+## 📂 Fase 11: Configuración de cuentas en Thunderbird
+
+En esta fase vinculamos las identidades creadas en **hMailServer** con nuestro cliente de correo para poder gestionar los mensajes de forma visual.
+
+### 11.1. Configuración de la cuenta principal (Profesor)
+Iniciamos Thunderbird e introducimos el nombre del docente y su dirección completa: `Profesor@AntonioMora.edu`. Al ser un entorno local, la detección automática no encontrará el servidor externo.
+
+![Datos Profesor](11-configuracion-cuentas-thunderbird/02-configuracion-cuentas-thunderbird-datos-profesor.png)
+
+### 11.2. Ajuste manual de protocolos y puertos
+Configuramos manualmente los servidores entrante y saliente apuntando a `localhost`. Establecemos el puerto **143** para IMAP y el puerto **25** para SMTP, seleccionando **Ninguna** seguridad y **Contraseña normal** para permitir la comunicación local.
+
+![Parámetros Localhost](11-configuracion-cuentas-thunderbird/04-configuracion-cuentas-thunderbird-parametros-localhost.png)
+
+### 11.3. Alta de la cuenta de alumno (Antonio1)
+Para probar el flujo de correos, añadimos una segunda cuenta desde el menú de ajustes. Repetimos el proceso de configuración manual para `Antonio1@AntonioMora.edu`.
+
+![Datos Alumno](11-configuracion-cuentas-thunderbird/09-configuracion-cuentas-thunderbird-datos-alumno.png)
+
+### 11.4. Validación y test de conectividad
+Pulsamos en **Probar** para que Thunderbird sondee el servidor hMailServer. Una vez recibida la confirmación en verde de que se han encontrado las configuraciones, aceptamos la advertencia de seguridad por falta de cifrado.
+
+![Configuración Encontrada](11-configuracion-cuentas-thunderbird/15-configuracion-cuentas-thunderbird-configuracion-encontrada.png)
+
+### 11.5. Panel de gestión finalizado
+Tras completar el asistente, el panel lateral muestra ambas cuentas operativas. Ya tenemos el escenario listo para realizar la prueba de envío entre usuarios del mismo dominio.
+
+![Panel Final](11-configuracion-cuentas-thunderbird/18-configuracion-cuentas-thunderbird-panel-final.png)
