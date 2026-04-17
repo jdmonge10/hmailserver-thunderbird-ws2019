@@ -202,56 +202,56 @@ Prueba técnica para asegurar que el servidor mantiene comunicación con el exte
 
 ## 📂 Fase 06: Preparación del Entorno (.NET Framework)
 
-En esta fase se habilitan las dependencias de software necesarias para hMailServer. El servidor requiere .NET Framework 3.5, cuya instalación en Windows Server 2019 puede presentar conflictos de red que resolvemos mediante el uso de medios físicos (ISO).
+En esta fase se habilitan las dependencias de software necesarias para hMailServer. Dado que la instalación online de .NET Framework 3.5 suele presentar bloqueos, se utiliza el medio de instalación local (ISO) como fuente alternativa.
 
-### Paso 6.1: Inicio del Asistente
-Se abre el "Administrador del Servidor" y se selecciona la opción "Agregar roles y características" para comenzar la configuración de los componentes necesarios.
-![Inicio Asistente](06-preparacion-entorno/01-preparacion-entorno-inicio.png)
+### Paso 6.1: Acceso al menú Administrar
+Se inicia el proceso desde el panel principal del Administrador del Servidor accediendo al menú superior "Administrar".
+![Acceso Administrar](06-preparacion-entorno/01-preparacion-entorno-acceso-administrar.png)
 
-### Paso 6.2: Selección de Características
-Dentro del asistente, navegamos hasta la sección de "Características" y marcamos la casilla de **.NET Framework 3.5 (incluye .NET 2.0 y 3.0)**.
-![Selección Características](06-preparacion-entorno/02-preparacion-entorno-seleccion.png)
+### Paso 6.2: Agregar Roles y Características
+Se selecciona la opción para iniciar el asistente de configuración de nuevos componentes.
+![Agregar Roles](06-preparacion-entorno/02-preparacion-entorno-agregar-roles.png)
 
-### Paso 6.3: Monitorización de Recursos
-Debido a la carga de trabajo que supone la gestión de componentes del sistema, se monitoriza el Administrador de Tareas para asegurar que el proceso `Dism Host Servicing Process` tiene recursos suficientes para operar.
-![Monitorización Recursos](06-preparacion-entorno/03-preparacion-entorno-recursos.png)
+### Paso 6.3: Inicio del Asistente
+Ventana inicial del asistente antes de comenzar la configuración.
+![Asistente Inicio](06-preparacion-entorno/03-preparacion-entorno-asistente-inicio.png)
 
-### Paso 6.4: Identificación de Bloqueo (43%)
-Durante la instalación estándar mediante Windows Update, se identifica un bloqueo persistente en el progreso del 43%. Esto se debe a latencias en la descarga de paquetes desde los servidores oficiales de Microsoft.
-![Bloqueo 43%](06-preparacion-entorno/04-preparacion-entorno-bloqueo.png)
+### Paso 6.4: Tipo de instalación
+Se mantiene la opción "Instalación basada en características o en roles".
+![Tipo Instalación](06-preparacion-entorno/04-preparacion-entorno-tipo-instalacion.png)
 
-### Paso 6.5: Solución Técnica - Ruta Alternativa
-Para mitigar el fallo de red, se selecciona la opción **"Especifique una ruta de acceso de origen alternativa"** situada en la parte inferior de la ventana de confirmación.
-![Especificar Ruta](06-preparacion-entorno/05-preparacion-entorno-especificar-ruta.png)
+### Paso 6.5: Selección del servidor
+Se confirma el servidor de destino donde se aplicarán los cambios.
+![Selección Servidor](06-preparacion-entorno/05-preparacion-entorno-seleccion-servidor.png)
 
-### Paso 6.6: Localización de la Unidad de Medios
-Se accede al explorador de archivos para confirmar que la imagen ISO de Windows Server 2019 está montada correctamente en la **Unidad de CD (D:)**.
-![Localización ISO](06-preparacion-entorno/06-preparacion-entorno-localizacion-iso.png)
+### Paso 6.6: Omisión de roles
+En esta fase no se requiere instalar roles adicionales, por lo que se pulsa "Siguiente".
+![Omitir Roles](06-preparacion-entorno/06-preparacion-entorno-omitir-roles.png)
 
-### Paso 6.7: Configuración de la Ruta SxS
-Se introduce la ruta técnica `D:\sources\sxs`. Esto indica al sistema que debe extraer los binarios necesarios directamente desde el almacenamiento local de la ISO, omitiendo la descarga por internet.
-![Ruta Introducida](06-preparacion-entorno/07-preparacion-entorno-ruta-introducida.png)
+### Paso 6.7: Selección de .NET Framework 3.5
+Se marca específicamente la característica de .NET Framework 3.5, indispensable para la compatibilidad con hMailServer.
+![Selección Framework](06-preparacion-entorno/07-preparacion-entorno-seleccion-framework.png)
 
-### Paso 6.8: Confirmación de Ruta Alternativa
-Se valida que el asistente ha reconocido la ruta alternativa antes de proceder con el despliegue final.
-![Ruta Alternativa](06-preparacion-entorno/08-preparacion-entorno-ruta-alternativa.png)
+### Paso 6.8: Especificar ruta de acceso alternativa
+Para evitar el bloqueo de descarga desde internet, se selecciona la opción inferior para indicar una ruta de origen alternativa.
+![Especificar Ruta](06-preparacion-entorno/08-preparacion-entorno-especificar-ruta.png)
 
-### Paso 6.9: Ejecución de la Instalación
-Se inicia el proceso de instalación. Gracias a la ruta alternativa, el servidor comienza a integrar las características de forma inmediata.
-![Ejecución Instalación](06-preparacion-entorno/09-preparacion-entorno-ejecucion-instalacion.png)
+### Paso 6.9: Confirmación de instalación correcta
+Tras indicar la ruta `D:\sources\sxs` (con la ISO montada), el asistente completa la operación con éxito.
+![Instalación Correcta](06-preparacion-entorno/09-preparacion-entorno-instalacion-correcta.png)
 
-### Paso 6.10: Progreso del Sistema
-Se observa cómo la barra de progreso avanza superando el punto crítico anterior, validando que el método de instalación local es efectivo.
-![Progreso Final](06-preparacion-entorno/10-preparacion-entorno-progreso-final.png)
+### Paso 6.10: Ejecución de la instalación
+Detalle del inicio de la implementación de las características seleccionadas.
+![Ejecución Instalación](06-preparacion-entorno/10-preparacion-entorno-ejecucion-instalacion.png)
 
-### Paso 6.11: Instalación Correcta
-El sistema notifica que la instalación se ha completado con éxito en el servidor "AntonioMora". El entorno ya cuenta con las librerías necesarias.
-![Éxito Final](06-preparacion-entorno/11-preparacion-entorno-exito-final.png)
+### Paso 6.11: Progreso de la instalación
+Monitorización del avance de la integración de componentes en el sistema.
+![Progreso Final](06-preparacion-entorno/11-preparacion-entorno-progreso-final.png)
 
-### Paso 6.12: Cierre del Asistente
-Se finaliza la sesión del asistente de configuración de roles y características.
-![Cierre Asistente](06-preparacion-entorno/12-preparacion-entorno-cierre.png)
+### Paso 6.12: Éxito final del proceso
+Confirmación de que la característica se ha habilitado correctamente en el servidor.
+![Éxito Final](06-preparacion-entorno/12-preparacion-entorno-exito-final.png)
 
-### Paso 6.13: Reinicio del Servidor
-Como último paso de la preparación del entorno, se realiza un **reinicio completo del servidor** para consolidar los cambios en el registro y asegurar la correcta carga de .NET Framework 3.5.
-![Reinicio del Servidor](06-preparacion-entorno/13-preparacion-entorno-reinicio-servidor.png)
+### Paso 6.13: Reinicio del servidor
+Se procede al reinicio del sistema para consolidar los cambios realizados en el entorno de .NET.
+![Reinicio Servidor](06-preparacion-entorno/13-preparacion-entorno-reinicio-servidor.png)
