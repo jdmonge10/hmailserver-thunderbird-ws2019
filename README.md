@@ -483,3 +483,49 @@ Confirmamos el cierre del asistente para la segunda cuenta.
 ### 11.16. Panel principal con ambas cuentas
 Vista final de la interfaz donde se comprueba que ambos buzones están listos para el envío y recepción.
 ![Panel Final](11-configuracion-cuentas-thunderbird/18-configuracion-cuentas-thunderbird-panel-final.png)
+
+---
+
+## 📂 Fase 12: Comprobación del funcionamiento
+
+En esta fase final, realizamos una prueba real de envío y recepción para validar la integridad del servidor y la gestión de errores en el flujo de mensajería.
+
+### 12.1. Redacción del correo de prueba
+Se inicia una prueba de envío desde la cuenta de **Profesor** hacia el alumno **Antonio1**, incluyendo en copia (Cc y Cco) a otros usuarios del dominio para testear la capacidad multidevolución del protocolo SMTP.
+
+![Redacción Correo Prueba](12-comprobacion-funcionamiento/01-comprobacion-redaccion-correo-prueba.png)
+
+### 12.2. Ejecución del envío
+Una vez revisado el contenido y los destinatarios, se procede a pulsar el botón **Enviar**. En este punto, el cliente establece comunicación con el servidor SMTP local para depositar el mensaje.
+
+![Ejecución Envío](12-comprobacion-funcionamiento/02-comprobacion-envio-mensaje.png)
+
+### 12.3. Gestión de errores: Cuenta no activa
+El servidor hMailServer bloquea el envío y devuelve un error: **"Account is not active"**. Esto se debe a que el destinatario `Mora2@AntonioMora.edu` está deshabilitado en el panel de control. El servidor demuestra así su capacidad de validación de reglas de negocio.
+
+![Error Cuenta Inactiva](12-comprobacion-funcionamiento/03-comprobacion-error-cuenta-inactiva.png)
+
+### 12.4. Corrección de la lista de destinatarios
+Se opta por eliminar la dirección conflictiva de la lista de envío para permitir que el flujo de correo continúe hacia las cuentas que sí están operativas.
+
+![Corrección Destinatarios](12-comprobacion-funcionamiento/04-comprobacion-correccion-destinatarios.png)
+
+### 12.5. Confirmación de salida exitosa
+Tras la corrección, Thunderbird confirma que el mensaje ha sido aceptado por el servidor SMTP y procesado correctamente hacia la cola de salida.
+
+![Envío Exitoso](12-comprobacion-funcionamiento/05-comprobacion-envio-exitoso.png)
+
+### 12.6. Recepción en el buzón del alumno
+Accedemos a la cuenta de **Antonio1** y verificamos que el correo ha llegado a su bandeja de entrada, validando el correcto funcionamiento del servicio de almacenamiento e IMAP.
+
+![Recepción Alumno](12-comprobacion-funcionamiento/06-comprobacion-recepcion-mensaje-alumno.png)
+
+### 12.7. Respuesta técnica del alumno
+El alumno responde al profesor confirmando la recepción y dejando constancia de la resolución del error previo con la cuenta inactiva.
+
+![Respuesta Explicativa Alumno](12-comprobacion-funcionamiento/07-comprobacion-respuesta-explicativa.png)
+
+### 12.8. Cierre del flujo de comunicación
+El **Profesor** recibe la respuesta de forma instantánea. Con este último paso, se certifica que la comunicación bidireccional en el dominio `AntonioMora.edu` es 100% funcional.
+
+![Recepción Final Profesor](12-comprobacion-funcionamiento/08-comprobacion-recepcion-respuesta-profesor.png)
