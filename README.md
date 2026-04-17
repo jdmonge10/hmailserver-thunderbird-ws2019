@@ -19,3 +19,27 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 
 ---
 
+
+## 🛠️ Especificaciones Técnicas
+Para asegurar la replicabilidad de este laboratorio de mensajería, se detallan los recursos utilizados:
+* **Hipervisor:** Oracle VirtualBox 7.x
+* **Sistema Operativo:** Windows Server 2019 Standard
+* **Recursos VM:** 4GB RAM | 2 vCPUs | 50GB VDI
+* **Servicios:** hMailServer (SMTP, IMAP, POP3)
+* **Cliente de Correo:** Mozilla Thunderbird
+
+---
+
+## 📂 Fase 01: Configuración de la Máquina Virtual (VirtualBox)
+El primer paso fundamental es preparar el hardware virtual. Una asignación correcta de recursos garantiza que los servicios de correo no sufran latencia durante el procesamiento de colas.
+
+### Paso 1.1: Creación y Ajustes de la VM
+Se configura una máquina virtual con los parámetros necesarios para soportar el entorno gráfico y el motor de base de datos de hMailServer:
+* **Nombre de la VM:** Windows Server 2019
+* **Memoria RAM:** 4096 MB (4 GB).
+* **Procesador:** 2 núcleos de CPU.
+* **Disco Duro:** 50 GB (Reserva dinámica).
+
+![Configuración de hardware virtual](01-configuracion-virtualbox/01-ajustes-hardware-virtual.png)
+
+---
