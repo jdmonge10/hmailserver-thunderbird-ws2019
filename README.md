@@ -128,7 +128,7 @@ Ejecución de la copia de archivos y configuración de los nuevos controladores 
 
 ### Paso 3.8: Finalización y reinicio
 Cierre del asistente y reinicio del sistema operativo para cargar los nuevos módulos del kernel.
-![Finalizado y Reinicio](03-instalacion-guest-additions/08-instalacion-guest-additions-finalizado-reinicios.png)
+![Finalizado y Reinicio](03-instalacion-guest-additions/08-instalacion-guest-additions-finalizado-reinicio.png)
 
 ### Paso 3.9: Autenticación post-reinicio
 Verificación del inicio de sesión tras la aplicación de las mejoras de rendimiento.
