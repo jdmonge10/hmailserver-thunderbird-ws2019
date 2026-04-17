@@ -490,27 +490,27 @@ Vista final de la interfaz donde se comprueba que ambos buzones están listos pa
 
 ### 12.1. Redacción del mensaje de prueba
 Se redacta el correo desde la cuenta del Profesor incluyendo a varios alumnos en copia para verificar el comportamiento del servidor ante múltiples destinatarios.
-![Redacción](12-comprobacion-funcionamiento/01-comprobacion-redaccion-correo-prueba.png)
+![Redacción](12-comprobacion-funcionamiento/02-comprobacion-redaccion-correo-prueba.png)
 
 ### 12.2. Intento de envío inicial
 Se pulsa el botón de enviar para que el cliente Thunderbird intente entregar el mensaje al servidor SMTP local.
-![Envío inicial](12-comprobacion-funcionamiento/02-comprobacion-envio-mensaje.png)
+![Envío inicial](12-comprobacion-funcionamiento/03-comprobacion-envio-mensaje.png)
 
 ### 12.3. Notificación de error del servidor
 El servidor hMailServer responde con un error de cuenta inactiva (Mora2), deteniendo el proceso de envío para proteger la integridad del flujo.
-![Error de cuenta](12-comprobacion-funcionamiento/03-comprobacion-error-cuenta-inactiva.png)
+![Error de cuenta](12-comprobacion-funcionamiento/04-comprobacion-error-cuenta-inactiva.png)
 
 ### 12.4. Ajuste de la lista de correos
 Se elimina la cuenta que causa el conflicto (Mora2) de la lista de destinatarios para poder proceder con el resto de direcciones activas.
-![Corrección](12-comprobacion-funcionamiento/04-comprobacion-correccion-destinatarios.png)
+![Corrección](12-comprobacion-funcionamiento/05-comprobacion-correccion-destinatarios.png)
 
 ### 12.5. Confirmación de salida satisfactoria
 Tras el ajuste, el servidor acepta el mensaje y Thunderbird muestra el progreso de envío completado sin errores.
-![Éxito de salida](12-comprobacion-funcionamiento/05-comprobacion-envio-exitoso.png)
+![Éxito de salida](12-comprobacion-funcionamiento/06-comprobacion-envio-exitoso.png)
 
 ### 12.6. Verificación en la bandeja de entrada del alumno
 Se comprueba que el correo ha llegado correctamente a la cuenta de `Antonio1@AntonioMora.edu`, validando el servicio de recepción.
-![Recepción Alumno](12-comprobacion-funcionamiento/06-comprobacion-recepcion-mensaje-alumno.png)
+![Recepción Alumno](12-comprobacion-funcionamiento/07-comprobacion-recepcion-mensaje-alumno.png)
 
 ### 12.7. Redacción de respuesta explicativa
 El alumno responde al profesor confirmando la recepción y aclarando que se ha tenido que omitir la cuenta deshabilitada para lograr el envío.
