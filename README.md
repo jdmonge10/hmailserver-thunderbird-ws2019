@@ -18,6 +18,7 @@ Este manual documenta el proceso técnico integral para crear un entorno de serv
 * [📂 Fase 09: Configuración de dominio y cuentas](#-fase-09-configuración-de-dominio-y-cuentas)
 * [📂 Fase 10: Descarga e instalación de Thunderbird](#-fase-10-descarga-e-instalación-de-thunderbird)
 * [📂 Fase 11: Configuración de cuentas en Thunderbird](#-fase-11-configuración-de-cuentas-en-thunderbird)
+* [📂 Fase 12: Comprobación del funcionamiento](#-fase-12-comprobación-del-funcionamiento)
 
 ---
 
