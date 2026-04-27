@@ -415,7 +415,7 @@ El sistema realiza la copia de los archivos binarios y la configuración de los 
 
 ### Paso 10.7: Finalización del proceso
 Se completa la instalación correctamente. Se selecciona la opción de ejecutar el programa inmediatamente para proceder con la configuración de las cuentas.
-![Finalización Instalación](10-descarga-instalacion-thunderbird/07-descarga-instalacion-thunderbird-finalizacion-instalacion.png
+![Finalización Instalación](10-descarga-instalacion-thunderbird/07-descarga-instalacion-thunderbird-finalizacion-instalacion.png)
 
 ---
 
